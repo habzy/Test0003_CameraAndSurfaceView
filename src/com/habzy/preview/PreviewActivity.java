@@ -16,6 +16,8 @@ public class PreviewActivity extends Activity implements OnClickListener {
 	private Button focusbutton;
 
 	private RelativeLayout camera;
+	
+	private MySurface mPreviewBack;
 
 	private RelativeLayout icon;
 
@@ -31,9 +33,11 @@ public class PreviewActivity extends Activity implements OnClickListener {
 
 		button = (Button) findViewById(R.id.cancel);
 
-		focusbutton = (Button) findViewById(R.id.mute);
+		focusbutton = (Button) findViewById(R.id.changeBck);
 
 		camera = (RelativeLayout) findViewById(R.id.cameraLayout);
+		
+		mPreviewBack = (MySurface)findViewById(R.id.Surface);
 
 		icon = (RelativeLayout) findViewById(R.id.imageLayout);
 
@@ -52,11 +56,11 @@ public class PreviewActivity extends Activity implements OnClickListener {
 				icon.setVisibility(View.GONE);
 			}
 			show = !show;
-		} else if (v.getId() == R.id.mute) {
+		} else if (v.getId() == R.id.changeBck) {
 			if (!focus) {
-				camera.setBackgroundResource(R.drawable.preview_backgroud);
+				mPreviewBack.setBackgroundResource(R.drawable.preview_backgroud);
 			} else {
-				camera.setBackgroundResource(R.drawable.preview_backgroud_green);
+				mPreviewBack.setBackgroundResource(R.drawable.preview_backgroud_green);
 			}
 			focus = !focus;
 		}

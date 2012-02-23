@@ -52,7 +52,7 @@ public class MySurface extends SurfaceView {
 		// height);
 		//
 		// }
-		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+		super.onMeasure(widthMeasureSpec-5, heightMeasureSpec-5);
 	}
 
 	private Callback mCallback = new Callback() {

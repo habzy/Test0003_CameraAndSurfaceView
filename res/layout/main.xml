@@ -1,44 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:orientation="vertical" android:layout_width="fill_parent"
-	android:layout_height="fill_parent">
-	<RelativeLayout android:layout_height="wrap_content"
-		android:layout_width="match_parent" android:id="@+id/imageLayout"
-		android:visibility="visible" android:orientation="vertical"
-		android:layout_marginTop="190px">
-		<ImageButton android:layout_height="wrap_content"
-			android:id="@+id/image" android:layout_width="wrap_content"
-			android:src="@drawable/mode6" android:layout_centerHorizontal="true"></ImageButton>
-	</RelativeLayout>
-	<RelativeLayout android:layout_width="wrap_content"
-		android:layout_height="wrap_content" android:layout_alignParentRight="true"
-		android:layout_marginRight="1dip" android:layout_marginTop="3dip"
-		 android:id="@+id/cameraLayout"
-		android:visibility="gone">
-		<RelativeLayout android:layout_width="138dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190px"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ImageButton
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/mode6" >
+        </ImageButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cameraLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="1dip"
+        android:layout_marginTop="3dip"
+        android:visibility="gone" >
+
+        <!--
+         	<RelativeLayout android:layout_width="138dip"  android:id="@+id/previewBack"
 			android:layout_height="160dip" android:background="@drawable/preview_backgroud">
 		</RelativeLayout>
-		<RelativeLayout android:layout_width="138dip"
-			android:layout_height="160dip">
-			<!-- android:layout_width="640px" android:layout_height="480px" -->
-			<com.habzy.preview.MySurface android:id="@+id/Surface"
-				android:layout_width="122dip" android:layout_height="146dip"
-				android:layout_centerInParent="true">
-			</com.habzy.preview.MySurface>
-		</RelativeLayout>
-	</RelativeLayout>
-	<LinearLayout android:layout_height="wrap_content"
-		android:layout_width="match_parent" android:id="@+id/buttonsLayout"
-		android:paddingBottom="20px" android:layout_alignParentBottom="true">
-		<Button android:id="@+id/speaker" android:layout_height="wrap_content"
-			android:layout_marginLeft="60px" android:text="Speaker"
-			android:layout_width="wrap_content"></Button>
-		<Button android:id="@+id/cancel" android:layout_height="wrap_content"
-			android:layout_marginLeft="30px" android:text="dis-able-Pre"
-			android:layout_width="wrap_content"></Button>
-		<Button android:id="@+id/mute" android:layout_height="wrap_content"
-			android:layout_marginLeft="30px" android:text="changeBck"
-			android:layout_width="wrap_content"></Button>
-	</LinearLayout>
+        -->
+
+
+        <!--
+             <RelativeLayout
+            android:layout_width="138dip"
+            android:layout_height="160dip" >
+        -->
+
+
+        <!-- android:layout_width="640px" android:layout_height="480px" -->
+
+        <com.habzy.preview.MySurface
+            android:id="@+id/Surface"
+            android:layout_width="122dip"
+            android:layout_height="146dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/preview_backgroud" >
+        </com.habzy.preview.MySurface>
+        <!-- </RelativeLayout> -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="20px" >
+
+        <Button
+            android:id="@+id/speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="Speaker" >
+        </Button>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:text="dis-able-Pre" >
+        </Button>
+
+        <Button
+            android:id="@+id/changeBck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:text="changeBck" >
+        </Button>
+    </LinearLayout>
 
 </RelativeLayout>
