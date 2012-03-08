@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content" >
+
     <!--
          	<RelativeLayout android:layout_width="138dip"  android:id="@+id/previewBack"
 			android:layout_height="160dip" android:background="@drawable/preview_backgroud">
-		</RelativeLayout>
-    -->
-
-
+		</RelativeLayout>    -->
     <!--
              <RelativeLayout
             android:layout_width="138dip"
-            android:layout_height="160dip" >
+            android:layout_height="160dip" >
     -->
-
-
     <!-- android:layout_width="640px" android:layout_height="480px" -->
 
     <com.habzy.preview.MySurface
         android:id="@+id/Surface"
-        android:layout_width="122dip"
-        android:layout_height="146dip"
+        android:layout_width="130dip"
+        android:layout_height="159dip"
         android:layout_centerInParent="true"
         android:background="@drawable/preview_backgroud" >
     </com.habzy.preview.MySurface>

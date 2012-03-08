@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.List;
 
 import android.content.Context;
-import android.graphics.PixelFormat;
 import android.hardware.Camera;
 import android.hardware.Camera.CameraInfo;
 import android.hardware.Camera.Size;
@@ -20,7 +19,7 @@ public class MySurface extends SurfaceView {
 	List<Size> mSupportedPreviewSizes;
 	Size mPreviewSize;
 
-	private int width, height;
+//	private int width, height;
 	
 
 	Camera mCamera;
@@ -52,7 +51,7 @@ public class MySurface extends SurfaceView {
 		// height);
 		//
 		// }
-		super.onMeasure(widthMeasureSpec-5, heightMeasureSpec-5);
+		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 	}
 
 	private Callback mCallback = new Callback() {

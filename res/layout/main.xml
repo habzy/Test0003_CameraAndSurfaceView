@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:layout_height="fill_parent">
 
     <RelativeLayout
         android:id="@+id/imageLayout"
@@ -21,31 +20,22 @@
         </ImageButton>
     </RelativeLayout>
 
-  <!--   <RelativeLayout
+    <RelativeLayout
         android:id="@+id/cameraLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
         android:layout_marginRight="1dip"
         android:layout_marginTop="3dip"
         android:visibility="gone" >
 
-        
+        <!--
          	<RelativeLayout android:layout_width="138dip"  android:id="@+id/previewBack"
 			android:layout_height="160dip" android:background="@drawable/preview_backgroud">
 		</RelativeLayout>
-       
-
-
-        
              <RelativeLayout
             android:layout_width="138dip"
             android:layout_height="160dip" >
-       
-
-
         android:layout_width="640px" android:layout_height="480px"
-
         <com.habzy.preview.MySurface
             android:id="@+id/Surface"
             android:layout_width="122dip"
@@ -54,7 +44,8 @@
             android:background="@drawable/preview_backgroud" >
         </com.habzy.preview.MySurface>
         </RelativeLayout>
-    </RelativeLayout> -->
+        -->
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/buttonsLayout"
