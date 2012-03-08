@@ -1,3 +1,10 @@
+/*
+ . * File name: MySurface.java
+ . * Description:
+ . * Author: Habzy Huang 
+ . * Change date: 2012-03-08
+ . * Change content: 
+ */
 package com.habzy.preview;
 
 import java.io.IOException;

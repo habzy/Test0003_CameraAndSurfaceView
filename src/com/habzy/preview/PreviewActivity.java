@@ -1,3 +1,10 @@
+/*
+ . * File name: PreviewActivity.java
+ . * Description:
+ . * Author: Habzy Huang 
+ . * Change date: 2012-03-08
+ . * Change content: 
+ */
 package com.habzy.preview;
 
 import android.app.Activity;
