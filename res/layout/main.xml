@@ -21,7 +21,7 @@
         </ImageButton>
     </RelativeLayout>
 
-    <RelativeLayout
+  <!--   <RelativeLayout
         android:id="@+id/cameraLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,21 +30,21 @@
         android:layout_marginTop="3dip"
         android:visibility="gone" >
 
-        <!--
+        
          	<RelativeLayout android:layout_width="138dip"  android:id="@+id/previewBack"
 			android:layout_height="160dip" android:background="@drawable/preview_backgroud">
 		</RelativeLayout>
-        -->
+       
 
 
-        <!--
+        
              <RelativeLayout
             android:layout_width="138dip"
             android:layout_height="160dip" >
-        -->
+       
 
 
-        <!-- android:layout_width="640px" android:layout_height="480px" -->
+        android:layout_width="640px" android:layout_height="480px"
 
         <com.habzy.preview.MySurface
             android:id="@+id/Surface"
@@ -53,8 +53,8 @@
             android:layout_centerInParent="true"
             android:background="@drawable/preview_backgroud" >
         </com.habzy.preview.MySurface>
-        <!-- </RelativeLayout> -->
-    </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout> -->
 
     <LinearLayout
         android:id="@+id/buttonsLayout"
@@ -64,15 +64,15 @@
         android:paddingBottom="20px" >
 
         <Button
-            android:id="@+id/speaker"
+            android:id="@+id/move"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60px"
-            android:text="Speaker" >
+            android:text="Move" >
         </Button>
 
         <Button
-            android:id="@+id/cancel"
+            android:id="@+id/showOrNot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30px"
