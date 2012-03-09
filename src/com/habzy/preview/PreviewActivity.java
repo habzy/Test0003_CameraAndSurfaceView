@@ -10,7 +10,6 @@ package com.habzy.preview;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
-import android.graphics.Rect;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -42,8 +41,6 @@ public class PreviewActivity extends Activity implements OnClickListener
     
     private LayoutParams layoutParams;
     
-    private int mStatusBarHeight;
-    
     private boolean mIsShownPre = false;
     
     private boolean mIsFocused = false;
@@ -63,8 +60,8 @@ public class PreviewActivity extends Activity implements OnClickListener
             {
                 case MotionEvent.ACTION_DOWN:
                 {
-                    distance[0] = event.getX() - layoutParams.leftMargin;
-                    distance[1] = event.getY() - layoutParams.topMargin;
+                    distance[0] = event.getRawX() - layoutParams.leftMargin;
+                    distance[1] = event.getRawY() - layoutParams.topMargin;
                     break;
                 }
                 case MotionEvent.ACTION_MOVE:
@@ -103,9 +100,6 @@ public class PreviewActivity extends Activity implements OnClickListener
     }
     
     /**
-     * @param parentLayout
-     *            the parent layout
-     * 
      */
     private void addPreviewFromXml()
     {
@@ -130,19 +124,9 @@ public class PreviewActivity extends Activity implements OnClickListener
      */
     public void moveView(int x, int y)
     {
-        if (mStatusBarHeight == 0)
-        {
-            View rootView = mPreviewLayout.getRootView();
-            Rect r = new Rect();
-            rootView.getWindowVisibleDisplayFrame(r);
-            mStatusBarHeight = r.top;
-        }
-        
         layoutParams.leftMargin = x;
-        layoutParams.topMargin = y - mStatusBarHeight;// STATUS_HEIGHT;
+        layoutParams.topMargin = y;;
         mCameraLayout.updateViewLayout(mPreviewLayout, layoutParams);
-        
-        // mPreviewLayout.layout(x, x, x, x);
     }
     
     /**
